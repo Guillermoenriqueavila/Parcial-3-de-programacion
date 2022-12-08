@@ -1,0 +1,39 @@
+CREATE DATABASE parcial3;
+use parcial3;
+CREATE TABLE `estudiantes` (
+  `id` mediumint(255) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `código` varchar(255) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `usuario` varchar(255) NOT NULL,
+  `contraseña` varchar(255) NOT NULL,
+  `rango` varchar(255) NOT NULL,
+  `telefono` varchar(255) NOT NULL,
+  `correo` varchar(255) NOT NULL,
+  `facultad` varchar(255) NOT NULL,
+  `carrera` varchar(255) NOT NULL
+);
+
+
+ADMINISTRADOR
+use parcial3;
+INSERT INTO `estudiantes` (`código`, `nombre`, `usuario`, `contraseña`, `rango`, `telefono`, `correo`, `facultad`, `carrera`) VALUES
+('SMADMIN01', 'Administrador', 'admin', '1234', 'ADM', '75600998', 'admin@gmail.com', 'No aplica', 'No aplica');
+
+
+ESTUDIANTES
+use parcial3;
+INSERT INTO `estudiantes` (`código`, `nombre`, `usuario`, `contraseña`, `rango`, `telefono`, `correo`, `facultad`, `carrera`) VALUES
+('SM01', 'David Henriquez', 'david', '1234', 'USR', '21212828', 'davidhenriquez@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM02', 'Guillermo Avila', 'guillermo', '1234', 'USR', '21212828', 'guillermoavila@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM03', 'Josue Villalta', 'josue', '1234', 'USR', '23232424', 'josuevillalta@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM04', 'Miguel Henriquez', 'miguel', '1234', 'USR', '25252828', 'miguelhenriquez@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM05', 'Luis Hernandez', 'luis', '1234', 'USR', '75600998', 'luishernandez@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM06', 'Pedro Lopez', 'pedro', '1234', 'USR', '75633998', 'pedrolopez@gmail.com', 'Ciencias de la Salud', 'Técnico en Enfermería'),
+('SM08', 'Manuel Hernández', 'ManuelHr', '123456', 'USR', '7239458', 'josemanuel2022@gmail.com', 'Facultad de Ciencia y Tecnología', 'Técnico en Ingeniería en Sistemas y Redes Informáticas'),
+('SM08', 'Sentelmy Baraona', 'paiz', '1234', 'USR', '6729-1234', 'sentelmy@gmail.com', 'Facultad de Ciencia y Tecnología', 'Técnico en Ingeniería en Sistemas y Redes Informáticas'),
+('SM09', 'Guillermo Avila', 'guillermosv503', '12345', 'USR', '720204596', 'guillermo.sv@gmail.com', 'Facultad de Ciencia y Tecnología', 'Técnico en Ingeniería en Sistemas y Redes Informáticas'),
+('SM10', 'sofia castillo', 'sofia2022', '123456', 'USR', '729390425', 'soficastillo20@gmail.com', 'Ciencias de la Salud', 'Licenciatura en Enfermería'),
+('SM11', 'mariana gonazales', 'marianasv4020', '1234567', 'USR', '783992025', 'mariana.gonzalez21@gmail.com', 'Ciencias de la Salud', 'Licenciatura en Enfermería'),
+('SM12', 'Rafael Avila', 'rafaavila2022', '12345678', 'USR', '7949395', 'rafa25avila@gmail.com', 'Facultad de Ciencia y Tecnología', 'Ingeniería en Gestion y Manejo de Bases de Datos'),
+('SM13', 'José Alfredo Castillo', 'alfredo2022', '1234567', 'USR', '754830248', 'jose2022alfredo@gmail.com', 'Facultad de Ciencia y Tecnología', 'Ingeniería en Gestion y Manejo de Bases de Datos'),
+('SM14', 'jhonatan henriquez', 'jhonasv2022', '12345', 'USR', '7660399', 'jhona2022@gmail.com', 'Facultad de Ciencia y Tecnología', 'Ingeniería en Sistemas y Redes Informáticas (Virtual)');
